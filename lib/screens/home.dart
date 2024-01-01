@@ -15,27 +15,43 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(6.0),
+          padding: const EdgeInsets.all(6.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: Row(
-                      children: [
-                        CustomAssetImage(
-                          assetName: 'assets/icons/worker.png',
-                          height: 25,
-                        ),
-                        CustomText(
-                          text: 'KORMI',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ],
-                    ),
+                  CustomText(
+                    text: 'KORMI',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  CustomAssetImage(
+                    assetName: 'assets/icons/worker.png',
+                    height: 25,
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                )),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const CustomText(
+                text: 'Category',
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              const SizedBox(
+                height: 10,
               ),
             ],
           ),
