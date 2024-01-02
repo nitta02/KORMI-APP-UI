@@ -5,11 +5,15 @@ class CustomText extends StatelessWidget {
   final String text;
   final double fontSize;
   final FontWeight fontWeight;
+  final double letterSpacing;
+
+
   const CustomText({
     Key? key,
     required this.text,
     required this.fontSize,
     required this.fontWeight,
+    required this.letterSpacing,
   }) : super(key: key);
 
   @override
@@ -19,6 +23,7 @@ class CustomText extends StatelessWidget {
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
+        letterSpacing: letterSpacing,
       ),
     );
   }
