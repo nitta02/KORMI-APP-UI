@@ -1,6 +1,9 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kormi_app_ui/constants/colors.dart';
+import 'package:kormi_app_ui/constants/worker.dart';
 import 'package:kormi_app_ui/screens/best_workers.dart';
 import 'package:kormi_app_ui/widgets/text.dart';
 
@@ -167,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Expanded(
                   child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: 5,
+                itemCount: workerList.length,
                 itemBuilder: (context, index) {
                   return categoryWorkers(
                       customHeight: customHeight, customWidth: customWidth);
@@ -202,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Expanded(
                   child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: 3,
                 itemBuilder: (context, index) {
                   return activeWoker_Section(
