@@ -15,6 +15,14 @@ class MyApp extends StatelessWidget {
       title: 'KORMI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+            backgroundColor: color2,
+            iconTheme: const IconThemeData(
+              color: Colors.black,
+            ),
+            actionsIconTheme: const IconThemeData(
+              color: Colors.black,
+            )),
         scaffoldBackgroundColor: color2,
         fontFamily: 'PTSansNarrow',
       ),
