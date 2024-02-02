@@ -18,5 +18,6 @@ This Project basically design for kormi app ui.
 
 
 ## Screenshots
+![Screenshot_1706856611](https://github.com/nitta02/KORMI-APP-UI/assets/110607962/39dce018-110e-435d-a7f9-974424070fd3)
 
 
