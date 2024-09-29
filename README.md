@@ -1,23 +1,19 @@
-# KORMI App UI
+# Kormi UI App
 
-This Project basically design for kormi app ui.
+This is a simple UI app built using Flutter. The project is organized into several key folders to maintain a modular structure, making it easy to scale and maintain.
 
+## Preview
+![Preview](assets/images/kormi.png)
 
-## Other Common Github Profile Sections
-- 🔭 I’m currently working on [Profile-O](https://github.com/nitta02/profile_app)
+## Project Structure
 
-- 🌱 I’m currently learning **Flutter, Kotlin**
-
-- 👯 I’m looking to collaborate on [Quotes_App](https://github.com/nitta02/Quotes_App)
-
-- 🤝 I’m looking for help with [Quotes_App](https://github.com/nitta02/Quotes_App)
-
-- 💬 Ask me about **Html,Css,JavaScript,Java,C,Python**
-
-- 📫 How to reach me **nittaranjantanmoy23@gmail.com**
-
-
-## Screenshots
-![Screenshot_1706856611](https://github.com/nitta02/KORMI-APP-UI/assets/110607962/39dce018-110e-435d-a7f9-974424070fd3)
-
-
+```bash
+lib/
+├── constants/
+│   └── # Contains app-wide constants like colors, fonts, etc.
+├── widgets/
+│   └── # Reusable UI components used across multiple screens.
+├── screens/
+│   └── # Screens for various pages of the app.
+├── category/
+│   └── # Categories and associated components used within the app.
